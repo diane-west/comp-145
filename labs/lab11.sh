@@ -1,0 +1,44 @@
+#!/bin/sh
+# lab11.sh
+
+choice=1
+while [ $choice -ne "5" ] ; do
+    echo "1. Add an entry "
+    echo "2. Display all matches to a string"
+    echo "3. Sort and display the file"
+    echo "4. Delete all entries that match a string"
+    echo "5. Quit to Unix"#!/bin/sh
+    echo -n "Enter your option #: "
+
+    read choice
+    case "$choice" in
+      1) echo -n  "Please enter a first name last name area code and phone
+number. Separate each field with a space: "
+         read fName lName areaCode pNum
+         printf "$fName\t$lName\t$areaCode\t$pNum\n"  >> phoBkLab11;; 
+      2) echo -n "Please enter the string you wish to match: "
+         read string2
+         if [ `expr "$string2" : '.*'` -eq 1 ] ; then
+            grep -i [$string2] phoBkLab11
+         else
+            grep -i "$string2" phoBkLab11
+         fi                        ;;
+      3) echo "Which field would you like to sort?"
+         echo  " 1) sort by first name"
+         echo  " 2) sort by last name"
+         echo  " 3) sort by telephone number"
+         echo -n  "Please enter a field number:  "
+         read field
+         sort -b -k $field phoBkLab11;;       #sort by field and display
+      4) echo -n "Please enter the string you wish to delete: "
+         read string4
+         if [ `expr "$string4" : '.*'` -eq 1 ] ; then
+            grep -vi [$string4] phoBkLab11 > tempPbk
+         else
+            grep -vi "$string4" phoBkLab11 > tempPbk
+         fi                           
+         mv tempPbk phoBkLab11;; 
+      5) exit ;;                          # exit to UNIX command line
+      *) echo "Invalid option"
+    esac                                 #end of case
+done

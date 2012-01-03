@@ -1,0 +1,6 @@
+PING sodapop.brookdalecc.edu (172.17.1.243): 56 data bytes
+64 bytes from 172.17.1.243: icmp_seq=0 ttl=64 time=0.034 ms
+
+--- sodapop.brookdalecc.edu ping statistics ---
+1 packets transmitted, 1 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.034/0.034/0.034/0.000 ms

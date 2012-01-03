@@ -1,0 +1,89 @@
+HTML
+Watch.html
+cfile
+dwLab2
+dwestLab2.text
+foo
+lab3file.txt
+mbox
+mess1
+myfile
+newlist
+proj1
+proj2
+typescript
+watch.
+watch.htm
+
+./proj1:
+memos
+mess1
+reports
+
+./proj1/memos:
+mess1
+
+./proj1/reports:
+mess1
+
+./proj2:
+costs
+mess1
+time
+
+./proj2/costs:
+mess1
+
+./proj2/time:
+mess1
+HTML
+Watch.html
+cfile
+dwLab2
+dwestLab2.text
+foo
+lab3file.txt
+mbox
+mess1
+myfile
+newlist
+proj1
+proj2
+typescript
+watch.
+watch.htm
+
+./proj1:
+memos
+mess1
+
+./proj1/memos:
+mess2
+
+./proj2:
+costs
+mess1
+time
+
+./proj2/costs:
+
+./proj2/time:
+mess1
+total 24
+-rw-r--r--  1 dwest3  users     0 Oct  3 20:40 HTML
+-rw-r--r--  1 dwest3  users     0 Oct  3 20:40 Watch.html
+-rw-r--r--  1 dwest3  users   213 Sep 19 20:54 cfile
+-rw-r--r--  1 dwest3  users   735 Sep 26 18:02 dwLab2
+-rw-r--r--  1 dwest3  users   747 Sep 26 17:24 dwestLab2.text
+-rw-r--r--  1 dwest3  users     0 Oct  3 21:06 foo
+-rw-r--r--  1 dwest3  users   508 Oct  5 13:28 lab3file.txt
+-rw-------  1 dwest3  users  2282 Sep 25 16:19 mbox
+-rw-rw-rw-  1 dwest3  users     0 Oct  5 13:03 mess1
+-rw-r-----  1 dwest3  users     0 Oct  5 13:40 mess2
+-rw-r--r--  1 dwest3  users    11 Sep 12 20:45 myfile
+-rw-r--r--  1 dwest3  users   152 Oct  3 21:04 newlist
+drwxrwxrwx  3 dwest3  users   512 Oct  5 13:16 proj1
+d---r-----  4 dwest3  users   512 Oct  5 13:05 proj2
+-rw-r--r--  1 dwest3  users  3080 Oct  5 13:59 typescript
+-rw-r--r--  1 dwest3  users     0 Oct  3 20:40 watch.
+-rw-r--r--  1 dwest3  users     0 Oct  3 20:40 watch.htm

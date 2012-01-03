@@ -1,0 +1,74 @@
+Script started on Mon Nov  7 21:13:09 2011
+/var/home/stud3/dwest3> echo Lab 7
+Lab 7
+/var/home/stud3/dwest3> grep "George  " /etc/passwd | wc -l
+     145
+/var/home/stud3/dwest3> who | sort -k1
+bbroder          ttyp0    Nov  2 09:30 (admin1-200)
+dwest3           ttyp1    Nov  7 21:06 (24.187.20.21)
+/var/home/stud3/dwest3> Lab 7.3       echo Lab7.3
+Lab7.3
+/var/home/stud3/dwest3> echo 7.3a
+7.3a
+/var/home/stud3/dwest3> sort -k2 grades > lab7.3
+/var/home/stud3/dwest3> echo 7.3b
+7.3b
+/var/home/stud3/dwest3> sort -k3 grades >> lab7.3
+/var/home/stud3/dwest3> echo la  7.3c
+7.3c
+/var/home/stud3/dwest3> grep "A$" grades
+Sam 	Smith	A
+Ann	Smith	A
+/var/home/stud3/dwest3> grep "A$" grads es >> lab7.3
+/var/home/stud3/dwest3> echo 7.3d
+7.3d
+/var/home/stud3/dwest3> wc -l grades >> lab7.3
+/var/home/stud3/dwest3> echo OR
+OR
+/var/home/stud3/dwest3> grep -nc [ABCDF]$ grades
+7
+/var/home/stud3/dwest3> grep -nc [ABCDF]$ grades >> a lab7.3
+/var/home/stud3/dwest3> echo 7.3e
+7.3e
+/var/home/stud3/dwest3> sort -k3 h grades | head -3 >> lab7.3
+/var/home/stud3/dwest3> 7.3f
+/bin/ksh: 7.3f: not found
+/var/home/stud3/dwest3> echo 7.3f
+7.3f
+/var/home/stud3/dwest3> sort -k3 grades | tail -2 >> lab7.3
+/var/home/stud3/dwest3> echo 7.3g
+7.3g
+/var/home/stud3/dwest3> cut -f2 grades > lan  name
+/var/home/stud3/dwest3> cut -f 1,3 grades > nameGr
+/var/home/stud3/dwest3> paste lname nameGr >> lab7.3
+/var/home/stud3/dwest3> exit
+
+Script done on Mon Nov  7 21:21:30 2011
+Script started on Mon Nov 14 18:10:47 2011
+/var/home/stud3/dwest3> echo OR 7.3g
+OR 7.3g
+/var/home/stud3/dwest3> cp grades gradesc1 | paste gradesc1 graes  des > grads7.3g                                                      exit
+
+Script done on Mon Nov 14 18:13:59 2011
+Script started on Mon Nov 14 18:14:46 2011
+/var/home/stud3/dwest3> cp grades gradesc1 | pastes gradesc1 grades > grades7.3g | cut -f 2,4,6 grades7.3g >> lab7.3
+/bin/ksh: pastes: not found
+/var/home/stud3/dwest3> cp grades         rm gradesc1
+/var/home/stud3/dwest3> rm grades7.3g
+/var/home/stud3/dwest3> c[   p grades gradesc1 | paste gradesc1 grades > grades7.3g | cut -f 2,4,6 grades7.3g >> lab7.3
+paste: gradesc1: No such file or directory
+/var/home/stud3/dwest3> exit
+
+Script done on Mon Nov 14 18:22:46 2011
+Script started on Mon Nov 14 18:34:56 2011
+/var/home/stud3/dwest3> cut -f2 grades | > lanme    name7.3g | paste lname7.3g grades > lab7.3g | cut -f 1,2,4 >> lab  7.3
+/var/home/stud3/dwest3> exi  cho redo 7.2
+redo 7.2
+/var/home/stud3/dwest3> who | sort -k1
+dwest3           ttyp3    Nov 14 16:31 (larrison4-121)
+etantillo1       ttyp1    Nov 14 18:34 (larrison4-130)
+gverveniotis1    ttyp2    Nov 14 18:20 (larrison4-133)
+lgesner          ttyp0    Nov 11 16:30 (admin1-206)
+/var/home/stud3/dwest3> exit
+
+Script done on Mon Nov 14 18:38:51 2011
