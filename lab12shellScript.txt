@@ -1,0 +1,77 @@
+#!/bin/sh
+# lab12.sh
+# Shell menu program
+
+choice=1
+while [ $choice -ne "5" ] ; do
+    echo "Menu"
+    echo "1. Copy a file to a designated directory "
+    echo "2. Check if a specified user is logged in"
+    echo "3. Dispay the details of a specified file"
+    echo "4. List the contents of a specified directory"
+    echo "5. Quit to Unix"
+    echo -n "Enter your option #: "
+
+    read choice
+    case "$choice" in
+
+         # 1) copy a file to a designated directory
+      1) echo  "Please enter a file name and the directory where you
+would like the file to be copied. Separate each field with a space: "
+         read fName dirName
+#Check the existence of the specified directory
+if [ ! -d $dirName ]
+then
+     mkdir $dirName
+     echo "made directory $dirName"
+fi
+
+#Verify the file exists
+if [ -f $1 ]
+then
+     echo "File exists"
+     echo "fName=$fName"
+     echo "dirName=$dirName"
+     echo "Getting ready to do cp"
+     cp $fName $dirName
+     if [ $? -eq 0 ]
+     then
+          echo "Success in copying"
+          echo "Success in copying" >> logfileLab12.txt
+     else
+          echo "Failure in copying"
+          echo "Failure in copying" >> logfileLab12.txt
+     fi
+
+fi                                  ;;
+
+        # 2) tell you  if a specified user is logged in
+      2) echo -n "Please enter the userid: "
+         read userId
+         whoMatch=`who | grep "$userId"`
+         echo $whoMatch
+         if [ -z "$whoMatch" ]
+         then
+             echo "$userId is not logged in"
+         else
+             echo "$userId is logged in"
+             echo $whoMatch
+         fi
+            ;;
+
+         # 3) Display the details of a specified file
+      3) echo -n  "Please specify the file and its directory location: "
+         read fileName3  dirLoc3
+         cd $dirLoc3
+         ls -l $fileName3  ;;     #display ls long listing of fileName3
+
+         # 4) List the contents of a specified directory
+      4) echo -n "Please specify the directory you wish to check: "
+         read dirLoc4
+         cd $dirLoc4
+         ls
+         ;;
+      5) exit ;;                          # exit to UNIX command line
+      *) echo "Invalid option"
+    esac                                 #end of case
+done

@@ -1,0 +1,34 @@
+#!/bin/sh
+# lab11.sh
+
+choice=1
+while [ $choice -ne "5" ] ; do
+    echo "1. Add an entry "
+    echo "2. Display all matches to a string"
+    echo "3. Sort and display the file"
+    echo "4. Delete all entries that match a string"
+    echo "5. Quit to Unix"#!/bin/sh
+    echo -n "Enter your option #: "
+
+    read choice
+    case "$choice" in
+      1) echo -n  "Please enter a first name last name area code and phone
+number"
+         read fName lName areaCode pNum
+         echo $fname "011" $lname "011" $areaCode "011" $pNum >>
+phoneBkData.txt
+      2)
+
+
+
+
+
+      3) sort -k2 phoneBkData.txt;;       #sort by last name & display
+      4)
+
+
+
+
+      5) exit ;;
+      *) echo "Invalid option"
+    esac                                 #end of case

@@ -1,0 +1,13 @@
+#!/bin/sh
+# cpfile1 for Lab9.2
+
+trap `rm -fr cp$$ ; exit 'HUP INT TERM QUIT
+while ( true )
+do
+    rm -fr cp$$
+    file1=/etc/passwd
+    while read fname
+    do
+        echo $fname >> cp$$
+    done < "$file1"
+    done
